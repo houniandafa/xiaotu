@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>交换</title>
+</head>
+<script>
+	window.onload = function() {
+		var oInp = document.getElementsByTagName('input')
+		oInp[2].onclick = function (){
+			var pim = oInp[0].value
+			oInp[0].value =oInp[1].value
+			oInp[1].value = pim
+		}
+		
+	}
+</script>
+<body>
+	<input type="text" value="">
+	<input type="text" value="">
+	<input type="button" value="交换">
+</body>
+</html>
